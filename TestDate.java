@@ -23,7 +23,7 @@ class TestDate {
 
         // TODO : your code after this line
         SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
-        Calendar userCalendar = new GregorianCalendar(year, month-1, day);
+        Calendar userCalendar = new GregorianCalendar(year, month-1, day-1);
         Date userDate = userCalendar.getTime();
         int dayOfTheWeek = userCalendar.get(Calendar.DAY_OF_WEEK);
         System.out.println("The date is : " + sdf.format(userDate));
